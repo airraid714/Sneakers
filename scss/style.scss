@@ -9,8 +9,10 @@
 //----------------------------------
 // Layouts
 // ---------------------------------
-
- 
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+@use "layout/sidebar"; 
  
 // ---------------------------------
 // Object
@@ -20,12 +22,15 @@
 // ----------
 // Component
 // ----------
-
+@use "Object/Component/";
  
 // ----------
 // Project
 // ----------
- 
+@use "Object/Project/pick-up";
+@use "Object/Project/page-top";
+@use "Object/Project/contact";
+@use "Object/Project/feature";
 // ----------
 // Utility
 // ----------
