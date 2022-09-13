@@ -1,1 +1,10 @@
 @use "../../Foundation/variable" as *;
+
+.p-feature{
+    width: 100%;
+    padding-bottom: 80px;
+
+    &__list{
+        padding:  20px 16px 10px;
+    }
+}

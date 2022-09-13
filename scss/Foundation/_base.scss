@@ -1,4 +1,5 @@
 @charset "UFT-8";
+@use "../Foundation/variable";
 
 html{
     font-size: 62.5%;
@@ -7,10 +8,13 @@ html{
     margin: 0;
 }
 body{
-    width: 100%;
+    width: calc(100vw - 15px);
+    overflow-x: hidden;
     height: 100%;
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    position: relative;
 }
-img{
+img, video {
     vertical-align: bottom;
 }
 ul{

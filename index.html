@@ -4,107 +4,185 @@
         <meta charset="utf-8">
         <title>Sneakers</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">                     <!-- ブレークポイントを作れるようにする -->
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">                  <!-- リセットCSSの読み込み　-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">                  <!-- リセットCSSの読み込み -->
         <link rel="stylesheet" href="css/style.css">                                             <!-- スタイルイートの読み込み -->
-        <link rel="icon" href="img/favicon.ico"> 
+        <link rel="icon" href="img/favicon.ico">                                                 <!-- ファビコンの設定 -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>     <!-- slickのcdn -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQueryの読み込み -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   <!-- slickのcdn -->
         
     </head>
     <body>
-        <header><!--ヘッダー-->
+        <header class="l-header"><!--ヘッダー-->
             <h1><a><img src="img/logo.svg"></a></h1>
-            <button>
-                <span></span>   <!--ハンバーガーボタン-->
+            <button class="c-button--hamburger js-hamburger">
+                <span>メニューボタン</span>   <!--ハンバーガーボタン-->
             </button>
         </header><!--ヘッダー-->
 
-        <main>  <!--メインコンテンツ-->
-            <header>    <!--メインの中のヘッダー-->
+        <main class="l-main">  <!--メインコンテンツ-->
+
+            <header class="p-first-view">    <!--メインの中のヘッダー-->
                 <video playsinline muted autoplay src="video/main.mp4"></video>
             </header>
-            <section>
-                <h2>Pick up</h2>
 
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <section class="p-pick-up">
+                <h2 class="c-title--section">Pick up</h2>
+
+                <ul class="p-pick-up__list js-slider">
+                    <li><img src="img/pickup1.jpg"></li>
+                    <li><img src="img/pickup2.jpg"></li>
+                    <li><img src="img/pickup3.jpg"></li>
+                    <li><img src="img/pickup4.jpg"></li>
+                    <li><img src="img/pickup5.jpg"></li>
+                    <li><img src="img/pickup6.jpg"></li>
                 </ul>
             </section>
-            <section>
-                <h2>FEATURE</h2>
 
-                <ul>
-                    <li>
-                        <img>
-                        <div>
-                            <h4></h4>
+            <section class="p-feature">
+                <h2 class="c-title--section">FEATURE</h2>
+
+                <ul class="p-feature__list c-grid">
+
+                    <li class="p-card">
+                        <img src="img/feature1.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
                             <p>テキストテキスト</p>
                             <time>XXXX.XX.XX</time>
                         </div>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="p-card">
+                        <img src="img/feature2.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature3.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature4.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature5.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature6.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature7.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature8.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
+                    <li class="p-card">
+                        <img src="img/feature9.jpg" class="p-card__img">
+                        <div class="p-card__text-box">
+                            <h4>category</h4>
+                            <p>テキストテキスト</p>
+                            <time>XXXX.XX.XX</time>
+                        </div>
+                    </li>
                 </ul>
             </section>
-            <section>
-                <h2>Contact</h2>
-                <div>
-                    <div>
-
+            <section class="p-contact">
+                <h2 class="c-title--section">Contact</h2>
+                <div class="p-info">
+                    <div class="p-info__text-box">
+                        <p>テキストテキストテキスト</p>
                     </div>
-                    <div>
-
+                    <div class="p-info__text-box">
+                        <p>
+                            テキストテキストテキストテキストテキストテキス
+                            トテキストテキストテキストテキストテキストテキ
+                            ストテキストテキストテキストテキストテキストテ
+                            キストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                        </p>
                     </div>
-                    <div>
-
+                    <div class="p-info__text-box">
+                        <p>
+                            テキストテキストテキストテキストテキストテキス
+                            トテキストテキストテキストテキストテキストテキ
+                            ストテキストテキストテキストテキストテキストテ
+                            キストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキスト
+                        </p>
                     </div>
 
                 </div>
-                <form action="#">
-                    <div>
+                <form action="#" class="p-form">
+                    <div class="p-form__box">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="your-name">
                     </div>
-                    <div>
-                        <label for="email">Mail</label>
+                    <div class="p-form__box">
+                        <label for="email">Mail:</label>
                         <input type="email" id="email" name="your-email">
                     </div>
-                    <div>
-                        <label for="message">Message</label>
+                    <div class="p-form__box">
+                        <label for="message">Message:</label>
                         <textarea id="message" name="your-message"></textarea>
                     </div>
+                    <input type="submit" class="c-button--form" value="SEND">
                 </form>
             </section>
         </main> <!--メインコンテンツ-->
 
-        <footer><!--フッター-->
+        <footer class="l-footer"><!--フッター-->
             <p>&copy; Sneakers</p>
         </footer><!--フッター-->
 
-        <aside> <!--サイドバー-->
-            <nuv>
-                <ul>
-                    <li>Pick</li>
-                    <li>FEATURE</li>
-                    <li>CONTACT</li>
+        <aside class="l-sidebar"> <!--サイドバー-->
+            <nav class="p-nav">
+                <ul class="p-nav__list--content">
+                    <li><a>PICK UP</a></li>
+                    <li><a>FEATURE</a></li>
+                    <li><a>CONTACT</a></li>
                 </ul>
-                <ul>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>instagram</li>
+                <ul class="p-nav__list--media">
+                    <li><a>Twitter</a></li>
+                    <li><a>Facebook</a></li>
+                    <li><a>instagram</a></li>
                 </ul>
-            </nuv>
+            </nav>
         </aside><!--サイドバー-->
-        <script></script>
+        <div class="c-layer"></div>
+        <script src="js/sidebar.js"></script>
+        <script src="js/slider.js"></script>
+
     </body>
 </html>

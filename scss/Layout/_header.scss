@@ -1,1 +1,17 @@
 @use "../Foundation/variable" as *;
+
+.l-header{
+    width: calc(100vw - 15px);
+    height: 80px;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    
+    @include breakpoint(tablet){
+        padding: 20px 40px;
+    }
+}

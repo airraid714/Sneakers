@@ -1,1 +1,10 @@
 @use "../../Foundation/variable" as *;
+
+.p-info{
+    padding-top:  20px;
+
+    &__text-box{
+        margin-bottom: 30px;
+
+    }
+}

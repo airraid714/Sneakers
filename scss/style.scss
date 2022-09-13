@@ -5,6 +5,7 @@
 @use  "foundation/_reset";
 @use  "foundation/_base";
 @use  "foundation/_variable";
+@use  "foundation/slick";
 
 //----------------------------------
 // Layouts
@@ -22,15 +23,32 @@
 // ----------
 // Component
 // ----------
-@use "Object/Component/";
+@use "Object/Component/button";
+@use "Object/Component/grid";
+@use "Object/Component/text";
+@use "Object/Component/title";
+@use "Object/Component/container";
+@use "Object/Component/wrapper";
+@use "Object/Component/is";
+@use "Object/Component/js";
+@use "Object/Component/layer";
+
+
+
+
+
  
 // ----------
 // Project
 // ----------
 @use "Object/Project/pick-up";
-@use "Object/Project/page-top";
+@use "Object/Project/first-view";
 @use "Object/Project/contact";
 @use "Object/Project/feature";
+@use "Object/Project/form";
+@use "Object/Project/info";
+@use "Object/Project/nav";
+@use "Object/Project/card";
 // ----------
 // Utility
 // ----------

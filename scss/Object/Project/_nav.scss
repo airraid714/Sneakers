@@ -1,0 +1,26 @@
+@use "../../Foundation/variable" as *;
+
+.p-nav{
+    color:  #fff;
+    font-size: 14.5px;
+    &__list--content{
+        margin-bottom: 60px;
+
+        >li{
+            padding: 20px 0;
+            border-top: 1px solid #fff;
+        }
+        >:last-child{
+            border-bottom:  1px solid #fff;
+        }
+    }
+
+
+    &__list--media{
+
+        >li{
+            padding: 5px 0;
+        }
+
+    }
+}

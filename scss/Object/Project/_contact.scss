@@ -1,1 +1,14 @@
 @use "../../Foundation/variable" as *;
+
+.p-contact{
+    width: 100%;
+    padding:  80px 16px;
+    background: #121212;
+    
+    p, label, .c-title--section{
+        color: #fff
+    }
+    p, label{
+        font-size: 14.5px;
+    }
+}
