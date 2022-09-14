@@ -18,4 +18,9 @@
         }
     
     }
+
+    @include breakpoint(pc){
+        width: 45%;
+    }
+
 }

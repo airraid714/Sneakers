@@ -11,4 +11,10 @@
     p, label{
         font-size: 14.5px;
     }
+
+    >.c-container{
+        @include breakpoint(pc){
+            padding: 40px 30px;
+        }
+    }
 }

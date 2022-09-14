@@ -6,6 +6,7 @@ jQuery( function($){
         $(".c-button--hamburger").toggleClass("is-active");
         $(".c-layer").toggleClass("is-open");
         $(".l-sidebar").toggleClass("is-open");
+        $(".slick-slider").toggleClass("is-open");
     });
     
 });

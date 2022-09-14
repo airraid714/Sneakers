@@ -7,3 +7,10 @@
 
 
 }
+.slick-slider{
+
+    &.is-open{
+        position: relative;
+        z-index: -1;    
+    }
+}

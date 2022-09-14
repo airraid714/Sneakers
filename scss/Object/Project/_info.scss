@@ -1,10 +1,15 @@
 @use "../../Foundation/variable" as *;
 
 .p-info{
+    width: 100%;
     padding-top:  20px;
 
     &__text-box{
         margin-bottom: 30px;
 
+    }
+
+    @include breakpoint(pc){
+        width: 45%;
     }
 }
